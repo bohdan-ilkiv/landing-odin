@@ -40,12 +40,26 @@ body {
 	}
 	.link-item {
 		display: inline-block;
+		list-style: none;
+		padding: 1rem;
+		position: relative;
 		.link {
 			text-decoration: none;
 			color: var(--color-quote-section);
 			text-transform: uppercase;
-			margin: 0 1rem;
 		}
+	}
+	.link-item::after{
+		content: '';
+		width: 0%;
+		height: 2px;
+		display: block;
+		margin: auto;
+		background: var(--color-btn);
+		transition: .5s;
+	}
+	.link-item:hover::after{
+		width: 100%;
 	}
 }
 
