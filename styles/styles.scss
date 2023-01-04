@@ -38,10 +38,8 @@ body {
 		font-size: 24px;
 		text-transform: uppercase;
 	}
-
 	.link-item {
 		display: inline-block;
-
 		.link {
 			text-decoration: none;
 			color: var(--color-quote-section);
@@ -134,16 +132,17 @@ body {
 			left: 0;
 			bottom: 0;
 			transform: translateX(100%);
-			transition: all .4s ease-out;
+			transition: all .4s ease-in-out;
 			z-index: 1;
 		}
 	
 		&:hover {
-			transition: all .4s ease-out;
+			transition: all .4s ease-in-out;
+			background-color: var(--color-btn);
 	
 			&::before {
 				transform: translateX(0);
-				transition: all .4s ease-out;
+				transition: all .4s ease-in-out;
 			}
 		}
 	}
